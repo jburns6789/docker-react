@@ -1,0 +1,14 @@
+FROM node:lts-alpine
+
+WORKDIR '/app'
+
+COPY package.json .
+
+RUN npm install
+
+COPY . .
+
+CMD ["npm", "run", "start"]
+
+#docker build -f Dockerfile.dev .
+#Remember to portmap to access locally, cannot access the container w/o porting to the local machine
