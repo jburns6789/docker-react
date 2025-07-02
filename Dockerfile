@@ -10,6 +10,7 @@ RUN npm run build
 #/app/build <--- the location of the source code
 
 FROM nginx  
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
 
 #COPY --from=builder /app/build /usr/share/nginx/html <--- taking the source code from 
