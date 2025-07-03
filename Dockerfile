@@ -1,6 +1,6 @@
 #build phase
 
-FROM node:16-alpine AS builder
+FROM node:lts-alpine as builder
 WORKDIR '/app'
 COPY package.json .
 RUN npm install
