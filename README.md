@@ -98,16 +98,5 @@ Security Best Practices
 
     Environment Variables: Store sensitive data in .env files and ensure they are listed in .gitignore and .dockerignore
 
-.
 
 Docker Secrets: For production, consider using Docker Secrets or AWS Secrets Manager for confidential data
-
-    .
-
-Additional Resources
-
-    [Dockerizing React: Step-by-step Guide]
-
-[AWS Elastic Beanstalk Documentation]
-
-[GitHub Actions Documentation]
